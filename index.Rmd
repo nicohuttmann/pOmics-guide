@@ -1,18 +1,17 @@
 ---
-    title: "pOmics"
+title: "pOmics"
 author: "Nico Hüttmann"
 site: bookdown::bookdown_site
 documentclass: book
 output:
-    bookdown::gitbook: default
+    bookdown::gitbook:
+      lib_dir: "book_assets"
 #bookdown::pdf_book: default
 ---
     
-    # Hello World
+# Preface {-}
     
-    Hi.
+Hi.
 
 Bye.
 
-<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
-    

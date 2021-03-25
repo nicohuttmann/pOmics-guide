@@ -3,10 +3,8 @@ title: "pOmics"
 author: "Nico Hüttmann"
 site: bookdown::bookdown_site
 documentclass: book
-output:
-    bookdown::gitbook:
-      lib_dir: "book_assets"
-#bookdown::pdf_book: default
+output: bookdown::gitbook
+github-repo: nicohuttmann/pOmics-guide
 ---
     
 # Preface {-}

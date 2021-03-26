@@ -1,6 +1,6 @@
 introduction
 setup-r-and-rstudio
-nummer-2
+r-basics
 data-handling
 a
 basic-analysis-workflow

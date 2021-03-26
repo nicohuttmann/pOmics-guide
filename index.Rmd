@@ -10,8 +10,22 @@ github-repo: nicohuttmann/pOmics-guide
 # Preface {-}
 This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it.
 
-\
-\
-\
-(Please imagine an impressive overview figure here.)
 
+Main features:
+
+* data structure for simple loading and handling of data
+* statistical analysis for proteomics data
+* functional enrichment via [clusterProfiler](https://guangchuangyu.github.io/software/clusterProfiler/) 
+* [tidyverse](https://www.tidyverse.org/) friendly
+* [ggplot2](https://ggplot2.tidyverse.org/), for publication-quality figures
+* [plotly](https://plotly.com/r/), for interactive data exploration
+* [R Markdown](https://rmarkdown.rstudio.com/), for efficient communication
+
+
+\
+\
+
+
+<p align="center">
+  <img width="500" src="Simba.PNG">
+</p>

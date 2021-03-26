@@ -6,8 +6,6 @@ bookdown::gitbook:
       scroll_highlight: no
       before: |
         <li><a href="./">pOmics Handbook</a></li>
-      after: |
-        <li><a href="https://github.com/nicohuttmann/pOmics" target="blank">pOmics R package</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book: default
 bookdown::epub_book: default

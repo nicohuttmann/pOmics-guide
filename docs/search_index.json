@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [["index.html", "pOmics: Tidy Proteomics Data Analysis in R Preface", " pOmics: Tidy Proteomics Data Analysis in R Nico Hüttmann Preface This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it. (Please imagine an impressive overview figure here.) "],["introduction.html", "Chapter 1 Introduction 1.1 Setup R and RStudio 1.2 R Basics", " Chapter 1 Introduction Hi. 1.1 Setup R and RStudio 1.2 R Basics Bye. "],["analysis-setup.html", "Chapter 2 Analysis Setup 2.1 Data loading 2.2 Data", " Chapter 2 Analysis Setup Hi 2.1 Data loading Hello 2.2 Data "],["basic-analysis-workflow.html", "Chapter 3 Basic analysis workflow 3.1 A", " Chapter 3 Basic analysis workflow Bonjour 3.1 A Hola "]]
+=======
+[["index.html", "pOmics: Tidy Proteomics Data Analysis in R Preface", " pOmics: Tidy Proteomics Data Analysis in R Nico Hüttmann Preface This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it. (Please imagine an impressive overview figure.) "]]
+>>>>>>> af7a98b8398962d5721ebea785aa33db90ec64e6

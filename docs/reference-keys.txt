@@ -1,8 +1,13 @@
 introduction
 setup-r-and-rstudio
 r-basics
+<<<<<<< HEAD
 analysis-setup
 data-loading
 data
+=======
+data-handling
+a
+>>>>>>> af7a98b8398962d5721ebea785aa33db90ec64e6
 basic-analysis-workflow
 a

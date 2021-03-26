@@ -3,16 +3,11 @@ bookdown::gitbook:
   config:
     toc:
       collapse: none
-      scroll_highlight: yes
+      scroll_highlight: no
       before: |
-        <li><a href="./">pOmics user guide</a></li>
+        <li><a href="./">pOmics Handbook</a></li>
       after: |
-        <li><a href="https://github.com/nicohuttmann/pOmics" target="blank">pOmics package</a></li>
+        <li><a href="https://github.com/nicohuttmann/pOmics" target="blank">pOmics R package</a></li>
     download: ["pdf", "epub"]
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
+bookdown::pdf_book: default
 bookdown::epub_book: default

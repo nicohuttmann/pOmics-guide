@@ -1,15 +1,19 @@
 ---
-title: "pOmics"
+title: "pOmics: Tidy Proteomics Data Analysis in R"
 author: "Nico Hüttmann"
 site: bookdown::bookdown_site
 documentclass: book
-output: bookdown::gitbook
+output:
+  bookdown::gitbook:
+    highlight: espresso
 github-repo: nicohuttmann/pOmics-guide
 ---
     
 # Preface {-}
-    
-Hi.
+This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it.
 
-Bye.
+\
+\
+\
+(Please imagine an impressive overview figure.)
 

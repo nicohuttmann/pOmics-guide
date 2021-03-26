@@ -1,14 +1,12 @@
 # Introduction
 
-
-
-This will be the introduction
+Hi.
 
 
 
-## subintro
+## Setup R and RStudio
 
-hi
+
 
 
 

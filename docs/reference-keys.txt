@@ -1,4 +1,7 @@
-hello-world
 introduction
-subintro
+setup-r-and-rstudio
 nummer-2
+data-handling
+a
+basic-analysis-workflow
+a-1

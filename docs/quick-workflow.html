@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>pOmics: Tidy Proteomics Data Analysis in R</title>
-  <meta name="description" content="pOmics: Tidy Proteomics Data Analysis in R" />
+  <title>Chapter 5 Quick workflow | pOmics: Tidy Proteomics Data Analysis in R</title>
+  <meta name="description" content="Chapter 5 Quick workflow | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="pOmics: Tidy Proteomics Data Analysis in R" />
+  <meta property="og:title" content="Chapter 5 Quick workflow | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nicohuttmann/pOmics-guide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="pOmics: Tidy Proteomics Data Analysis in R" />
+  <meta name="twitter:title" content="Chapter 5 Quick workflow | pOmics: Tidy Proteomics Data Analysis in R" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction.html"/>
+<link rel="prev" href="setting-up-an-analysis-project.html"/>
+<link rel="next" href="basic-analysis-workflow.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -87,7 +87,10 @@
 </ul></li>
 <li class="chapter" data-level="3" data-path="overview-pomics.html"><a href="overview-pomics.html"><i class="fa fa-check"></i><b>3</b> Overview pOmics</a></li>
 <li class="chapter" data-level="4" data-path="setting-up-an-analysis-project.html"><a href="setting-up-an-analysis-project.html"><i class="fa fa-check"></i><b>4</b> Setting up an Analysis Project</a></li>
-<li class="chapter" data-level="5" data-path="importing-data.html"><a href="importing-data.html"><i class="fa fa-check"></i><b>5</b> Importing data</a></li>
+<li class="chapter" data-level="5" data-path="quick-workflow.html"><a href="quick-workflow.html"><i class="fa fa-check"></i><b>5</b> Quick workflow</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="quick-workflow.html"><a href="quick-workflow.html#importing-data"><i class="fa fa-check"></i><b>5.1</b> Importing data</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="basic-analysis-workflow.html"><a href="basic-analysis-workflow.html"><i class="fa fa-check"></i><b>6</b> Basic analysis workflow</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="basic-analysis-workflow.html"><a href="basic-analysis-workflow.html#a"><i class="fa fa-check"></i><b>6.1</b> A</a></li>
@@ -109,38 +112,32 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">pOmics: Tidy Proteomics Data Analysis in R</h1>
-<p class="author"><em>Nico Hüttmann</em></p>
-</div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it.</p>
-<p>Main features:</p>
-<ul>
-<li>data structure for simple loading and handling of data</li>
-<li>statistical analysis for proteomics data</li>
-<li>functional enrichment via <a href="https://guangchuangyu.github.io/software/clusterProfiler/">clusterProfiler</a></li>
-<li><a href="https://www.tidyverse.org/">tidyverse</a> friendly</li>
-<li><a href="https://ggplot2.tidyverse.org/">ggplot2</a>, for publication-quality figures</li>
-<li><a href="https://plotly.com/r/">plotly</a>, for interactive data exploration</li>
-<li><a href="https://rmarkdown.rstudio.com/">R Markdown</a>, for efficient communication</li>
-</ul>
-<p><br />
-<br />
-</p>
-<p align="center">
-<img width="500" src="Simba.PNG">
-</p>
+<div id="quick-workflow" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Quick workflow</h1>
+<div id="importing-data" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Importing data</h2>
+<p>Let’s get started with importing our raw data into R.</p>
+<p>The easiest way is to use the <code>import_files()</code> function. Its purpose is to read any kind of raw data and store it in the <code>.imports</code> list. If no argument is supplied for <code>files</code>, the function opens a separate window to manually specify the file/s.</p>
+<pre><code>new_dataset(import = .imports[[&quot;Hjv_proteomics_DEN_proteinGroups&quot;]],
+            name = &quot;DEN&quot;,
+            identifier = &quot;Protein.IDs&quot; ,
+            data.types = c(&quot;Gene.names&quot;,
+                           &quot;Protein.names&quot;,
+                           &quot;LFQ.intensity&quot;,
+                           &quot;Only.identified.by.site&quot;,
+                           &quot;Potential.contaminant&quot;,
+                           &quot;Reverse&quot;))</code></pre>
+<p>h</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="setting-up-an-analysis-project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="basic-analysis-workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,8 +1,14 @@
 introduction
 setup-r-and-rstudio
 r-basics
-analysis-setup
-data-loading
-data
+getting-started-with-r-and-rstudio
+overview-pomics
+importing-data
 basic-analysis-workflow
 a
+install-the-r-language
+install-rstudio
+install-others
+install-r-packages
+setting-up-an-analysis-project
+quick-workflow

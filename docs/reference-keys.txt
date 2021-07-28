@@ -12,3 +12,6 @@ install-others
 install-r-packages
 setting-up-an-analysis-project
 quick-workflow
+organize-datasets
+code-snippets-for-quick-analysis
+summary-on-protein-count

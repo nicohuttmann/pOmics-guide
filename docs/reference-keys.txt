@@ -15,3 +15,7 @@ quick-workflow
 organize-datasets
 code-snippets-for-quick-analysis
 summary-on-protein-count
+install-r-bioconductor-packages
+install-r-packages-1
+acknowledgments
+acknowledgements

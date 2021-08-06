@@ -29,3 +29,20 @@ Main features:
 <p align="center">
   <img width="500" src="Simba.PNG">
 </p>
+
+
+
+# Acknowledgements {-}
+
+This R package was developed at the University of Ottawa in the lab of [Dr. Maxim Berezovski](https://mysite.science.uottawa.ca/mberezov/) and while working under Dr. Zoran Minic, Core Facility Manager and Biological Mass Spectrometrist of the John L. Holmes Mass Spectrometry Facility. Both have given me the necessary challenges and freedom to try and learn approaches to various problems addressed by modern MS-based proteomics.  
+
+Initial collections of data analysis functions I used throughout my Master's program have been superseded by this R package.My first undergraduate student Abdullah Khraibah motivated me to write functions comprehensible to others which ultimately led to much better code and reproducibility in my own work.  
+
+Lastly, long before I used the tidyverse or R Markdown for the first time, and friend and fellow student from the TU Darmstadt, Daniel Torka recommended both to me, which I dismissed at that time. Now, both are integral parts of my everyday work and I feel very stupid. Thanks Junior!
+
+
+
+
+
+
+

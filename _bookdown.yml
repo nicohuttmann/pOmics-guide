@@ -9,7 +9,8 @@ rmd_files: [
   "index.Rmd",
 
   "intro.Rmd",
-  "getting_started.Rmd"
+  "getting_started.Rmd",
+  "github.Rmd"
 
 
 

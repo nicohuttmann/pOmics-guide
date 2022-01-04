@@ -8,3 +8,10 @@ install-rstudio
 install-others
 install-r-packages
 install-r-bioconductor-packages
+version-control-with-git-and-github
+importing-data
+organize-datasets
+common-problems
+too-large-files
+gitignore-does-not-instantly-work
+basic-update-of-data

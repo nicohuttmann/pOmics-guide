@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Getting started with R and RStudio | pOmics: Tidy Proteomics Data Analysis in R</title>
-  <meta name="description" content="Chapter 2 Getting started with R and RStudio | pOmics: Tidy Proteomics Data Analysis in R" />
+  <title>Chapter 3 Version control with Git and GitHub | pOmics: Tidy Proteomics Data Analysis in R</title>
+  <meta name="description" content="Chapter 3 Version control with Git and GitHub | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Getting started with R and RStudio | pOmics: Tidy Proteomics Data Analysis in R" />
+  <meta property="og:title" content="Chapter 3 Version control with Git and GitHub | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nicohuttmann/pOmics-guide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Getting started with R and RStudio | pOmics: Tidy Proteomics Data Analysis in R" />
+  <meta name="twitter:title" content="Chapter 3 Version control with Git and GitHub | pOmics: Tidy Proteomics Data Analysis in R" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction.html"/>
-<link rel="next" href="version-control-with-git-and-github.html"/>
+<link rel="prev" href="getting-started-with-r-and-rstudio.html"/>
+
 <script src="libs/header-attrs-2.9.2/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -137,8 +137,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="ressources.html"><a href="ressources.html"><i class="fa fa-check"></i>Ressources</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#setup-r-and-rstudio"><i class="fa fa-check"></i><b>1.1</b> Setup R and RStudio</a></li>
@@ -155,8 +153,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html"><i class="fa fa-check"></i><b>3</b> Version control with Git and GitHub</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#importing-data"><i class="fa fa-check"></i><b>3.1</b> Importing data</a></li>
-<li class="chapter" data-level="3.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#organize-datasets"><i class="fa fa-check"></i><b>3.2</b> Organize datasets</a></li>
+<li class="chapter" data-level="3.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#basic-update-of-data"><i class="fa fa-check"></i><b>3.1</b> Basic update of data</a></li>
+<li class="chapter" data-level="3.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#common-problems"><i class="fa fa-check"></i><b>3.2</b> Common problems</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#too-large-files"><i class="fa fa-check"></i><b>3.2.1</b> Too large files</a></li>
+<li class="chapter" data-level="3.2.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#gitignore-does-not-instantly-work"><i class="fa fa-check"></i><b>3.2.2</b> .gitignore does not instantly work</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -175,50 +177,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="getting-started-with-r-and-rstudio" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Getting started with R and RStudio</h1>
-<div id="install-the-r-language" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Install the R language</h2>
-<p>Download the most recent release of R for your platform from <a href="https://cloud.r-project.org/" class="uri">https://cloud.r-project.org/</a>. Install it as any other program. It is important to install R before RStudio.</p>
+<div id="version-control-with-git-and-github" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Version control with Git and GitHub</h1>
+<p><a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR</a></p>
+<div id="basic-update-of-data" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Basic update of data</h2>
+<p>Add files:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="version-control-with-git-and-github.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code></pre></div>
 </div>
-<div id="install-rstudio" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Install RStudio</h2>
-<p>Download the desktop version of RStudio from <a href="https://www.rstudio.com/products/rstudio/" class="uri">https://www.rstudio.com/products/rstudio/</a>. This is the program in which you will interact with the R language and conduct all your analyses.</p>
+<div id="common-problems" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Common problems</h2>
+<div id="too-large-files" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Too large files</h3>
+<p>Original post of the answer: <a href="https://stackoverflow.com/a/17890278" class="uri">https://stackoverflow.com/a/17890278</a>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Download the BFG Repo-Cleaner jar file “bfg-x.xx.x.jar” (e.g. “bfg-1.14.0.jar”) from <a href="https://rtyley.github.io/bfg-repo-cleaner/" class="uri">https://rtyley.github.io/bfg-repo-cleaner/</a>.</p></li>
+<li><p>Place the file in the directory of your R project, the same of the .git folder.</p></li>
+<li><p>Open the terminal in this folder (e.g. via RStudio &gt; Git &gt; Shell…)</p></li>
+<li><p>Type in the terminal:</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="version-control-with-git-and-github.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> bfg.jar <span class="at">--strip-blobs-bigger-than</span> 100M</span></code></pre></div>
+<p>The file name “bfg.jar” must match the name of your jar file and the file size limit can be changed (e.g. 50M for 50 )</p>
+<ol start="5" style="list-style-type: decimal">
+<li>If you do not encouter an error, type:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="version-control-with-git-and-github.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> gc <span class="at">--prune</span><span class="op">=</span>now <span class="at">--aggressive</span></span></code></pre></div>
+<p>to clean the dead data.</p>
+<p>If you encounter the following error <code>Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?</code>, refer to this post <a href="https://stackoverflow.com/q/61769785" class="uri">https://stackoverflow.com/q/61769785</a> and type <code>git gc</code> prior to step 4.</p>
 </div>
-<div id="install-others" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Install others</h2>
-<p>To install packages from GitHub, you need RTools. Install RTools from <a href="https://cran.r-project.org/bin/windows/Rtools/" class="uri">https://cran.r-project.org/bin/windows/Rtools/</a>.</p>
-</div>
-<div id="install-r-packages" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Install R packages</h2>
-<p>“R packages are collections of functions and data sets developed by the community. They increase the power of R by improving existing base R functionalities, or by adding new ones.”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<p>(Available CRAN Packages By Name)[<a href="https://cran.r-project.org/web/packages/available_packages_by_name.html" class="uri">https://cran.r-project.org/web/packages/available_packages_by_name.html</a>]</p>
-</div>
-<div id="install-r-bioconductor-packages" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Install R Bioconductor packages</h2>
-<p>Install devtools using <code>install.packages("devtools")</code>.</p>
-<p>Install Bioconductor (<a href="https://bioconductor.org/" class="uri">https://bioconductor.org/</a>) via</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="getting-started-with-r-and-rstudio.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb1-2"><a href="getting-started-with-r-and-rstudio.html#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
-<span id="cb1-3"><a href="getting-started-with-r-and-rstudio.html#cb1-3" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>()</span></code></pre></div>
-<p>Install the tidyverse (<a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a>) via</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="getting-started-with-r-and-rstudio.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<div id="gitignore-does-not-instantly-work" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> .gitignore does not instantly work</h3>
+<p>Just do:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="version-control-with-git-and-github.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">-r</span> <span class="at">--cached</span> .</span>
+<span id="cb4-2"><a href="version-control-with-git-and-github.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb4-3"><a href="version-control-with-git-and-github.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Drop files from .gitignore&quot;</span></span></code></pre></div>
 
 </div>
 </div>
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p><a href="https://www.datacamp.com/community/tutorials/r-packages-guide" class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a><a href="getting-started-with-r-and-rstudio.html#fnref1" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="version-control-with-git-and-github.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-started-with-r-and-rstudio.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

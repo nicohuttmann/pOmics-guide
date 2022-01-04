@@ -1,0 +1,62 @@
+# Version control with Git and GitHub
+
+
+[Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
+
+## Basic update of data
+
+Add files:
+
+```{bash, eval=FALSE}
+git add .
+```
+
+
+
+
+
+
+
+## Common problems
+
+
+### Too large files
+
+
+Original post of the answer: https://stackoverflow.com/a/17890278.
+
+1. Download the BFG Repo-Cleaner jar file "bfg-x.xx.x.jar" (e.g. "bfg-1.14.0.jar") from https://rtyley.github.io/bfg-repo-cleaner/.
+
+2. Place the file in the directory of your R project, the same of the .git folder.
+
+3. Open the terminal in this folder (e.g. via RStudio > Git > Shell...)
+
+4. Type in the terminal:
+
+```{bash, eval=FALSE}
+java -jar bfg.jar --strip-blobs-bigger-than 100M
+```
+
+The file name "bfg.jar" must match the name of your jar file and the file size limit can be changed (e.g. 50M for 50 )
+
+5. If you do not encouter an error, type:
+
+```{bash, eval=FALSE}
+git gc --prune=now --aggressive
+```
+
+to clean the dead data.
+
+
+If you encounter the following error `Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?`, refer to this post https://stackoverflow.com/q/61769785 and type `git gc` prior to step 4.
+
+
+### .gitignore does not instantly work
+
+Just do:
+```{bash, eval=FALSE}
+git rm -r --cached .
+git add .
+git commit -m "Drop files from .gitignore"
+```
+

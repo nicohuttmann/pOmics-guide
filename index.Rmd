@@ -9,7 +9,18 @@ github-repo: nicohuttmann/pOmics-guide
 
 # Preface {.unnumbered}
 
-This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it.
+Welcome! This is my attempt to summarize what I learned about proteomics data analysis in R. It took me a while to learn it, so why not share it.
+
+\
+\
+
+<p align="center">
+
+<img src="img/Simba.PNG" width="500"/>
+
+</p>
+
+
 
 Main features:
 
@@ -21,14 +32,9 @@ Main features:
 -   [plotly](https://plotly.com/r/), for interactive data exploration
 -   [R Markdown](https://rmarkdown.rstudio.com/), for efficient communication
 
-\
-\
 
-<p align="center">
 
-<img src="img/Simba.PNG" width="500"/>
 
-</p>
 
 # Acknowledgements {.unnumbered}
 

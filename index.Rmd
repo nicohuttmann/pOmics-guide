@@ -6,51 +6,43 @@ documentclass: book
 output: bookdown::gitbook
 github-repo: nicohuttmann/pOmics-guide
 ---
-    
-# Preface {-}
-This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it.
 
+# Preface {.unnumbered}
+
+This is my attempt to make proteomics data analysis in R accessible to other scientists. Took me a while to learn it, so why not share it.
 
 Main features:
 
-* data structure for simple loading and handling of data
-* statistical analysis for proteomics data
-* functional enrichment via [clusterProfiler](https://guangchuangyu.github.io/software/clusterProfiler/) 
-* [tidyverse](https://www.tidyverse.org/) friendly
-* [ggplot2](https://ggplot2.tidyverse.org/), for publication-quality figures
-* [plotly](https://plotly.com/r/), for interactive data exploration
-* [R Markdown](https://rmarkdown.rstudio.com/), for efficient communication
-
+-   data structure for simple loading and handling of data
+-   statistical analysis for proteomics data
+-   functional enrichment via [clusterProfiler](https://guangchuangyu.github.io/software/clusterProfiler/)
+-   [tidyverse](https://www.tidyverse.org/) friendly
+-   [ggplot2](https://ggplot2.tidyverse.org/), for publication-quality figures
+-   [plotly](https://plotly.com/r/), for interactive data exploration
+-   [R Markdown](https://rmarkdown.rstudio.com/), for efficient communication
 
 \
 \
-
 
 <p align="center">
-  <img width="500" src="Simba.PNG">
+
+<img src="img/Simba.PNG" width="500"/>
+
 </p>
 
-
-
-# Acknowledgements {-}
+# Acknowledgements {.unnumbered}
 
 This R package was developed at the University of Ottawa in the [lab](https://mysite.science.uottawa.ca/mberezov/) of [Dr. Maxim Berezovski](https://mysite.science.uottawa.ca/mberezov/maxim-berezovski.html) and working with [Dr. Zoran Minic](https://mysite.science.uottawa.ca/mberezov/team/current-lab-members/zoran-minic.html), Core Facility Manager and Biological Mass Spectrometrist of the [John L. Holmes Mass Spectrometry Facility](https://www.jlhms.uottawa.ca/staff.html). Both have given me the necessary challenges and freedom to try and learn approaches to various problems addressed by modern MS-based proteomics, and put the results together in this R package.
 
+Initial collections of data analysis functions I used throughout my Master's program have been superseded by this package. My first undergraduate student Abdullah Khraibah motivated me to write functions comprehensible to others which ultimately led to much better code and reproducibility in my own work.
 
-Initial collections of data analysis functions I used throughout my Master's program have been superseded by this package. My first undergraduate student Abdullah Khraibah motivated me to write functions comprehensible to others which ultimately led to much better code and reproducibility in my own work.  
+Last but not least, long before I used the tidyverse or R Markdown for the first time, [Daniel Torka](https://github.com/danielbenjamintorka), a friend and fellow student from Darmstadt, recommended both to me, which I dismissed at that time. Now, both are integral parts of my everyday work and I feel very stupid. Thanks Junior!
 
-
-Lastly, long before I used the tidyverse or R Markdown for the first time, and friend and fellow student from Darmstadt, [Daniel Torka](https://github.com/danielbenjamintorka), recommended both to me, which I dismissed at that time. Now, both are integral parts of my everyday work and I feel very stupid. Thanks Junior!
-
-
-
-# Ressources {-}
+# Ressources {.unnumbered}
 
 This is a brief listing of resources for proteomics data analysis and R programming on which all following content is based on:
 
-* [MaxQuant Summer School YouTube Channel](https://www.youtube.com/channel/UCKYzYTm1cnmc0CFAMhxDO8w)
-* More to come
-
-
+-   [MaxQuant Summer School YouTube Channel](https://www.youtube.com/channel/UCKYzYTm1cnmc0CFAMhxDO8w)
+-   More to come
 
 This is merely a short list of general resources to start getting into proteomics data analysis in R. These and further articles, tutorial, etc. will be referenced throughout the handbook where informative. Have fun!

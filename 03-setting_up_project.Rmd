@@ -1,7 +1,7 @@
 # Setting up an Analysis Project
 
 
-
+hi
 
 
 https://martinctc.github.io/blog/rstudio-projects-and-working-directories-a-beginner's-guide/

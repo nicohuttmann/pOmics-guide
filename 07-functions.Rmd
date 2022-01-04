@@ -23,3 +23,32 @@ data_ <- get_data_(data.name = "Peptides", name = "Peptides") %>%
 
 
 ```
+
+
+
+## Protein expression analysis
+
+
+
+
+
+
+
+
+
+
+
+## Correlation matrix analysis
+
+Correlation matrix analysis is a powerful tool to understand the composition of a 
+
+
+```r 
+
+```
+
+
+
+
+
+

@@ -19,3 +19,7 @@ install-r-bioconductor-packages
 install-r-packages-1
 acknowledgments
 acknowledgements
+working-with-databases-for-functional-enrichment
+msigdb-database
+data-handling
+protein-expression-analysis

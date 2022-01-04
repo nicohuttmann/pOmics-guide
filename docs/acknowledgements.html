@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="introduction.html"/>
+<link rel="next" href="ressources.html"/>
 <script src="libs/header-attrs-2.9.2/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -74,6 +74,7 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="ressources.html"><a href="ressources.html"><i class="fa fa-check"></i>Ressources</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#setup-r-and-rstudio"><i class="fa fa-check"></i><b>1.1</b> Setup R and RStudio</a></li>
@@ -94,6 +95,7 @@
 <ul>
 <li class="chapter" data-level="5.1" data-path="quick-workflow.html"><a href="quick-workflow.html#importing-data"><i class="fa fa-check"></i><b>5.1</b> Importing data</a></li>
 <li class="chapter" data-level="5.2" data-path="quick-workflow.html"><a href="quick-workflow.html#organize-datasets"><i class="fa fa-check"></i><b>5.2</b> Organize datasets</a></li>
+<li class="chapter" data-level="5.3" data-path="quick-workflow.html"><a href="quick-workflow.html#data-handling"><i class="fa fa-check"></i><b>5.3</b> Data handling</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="basic-analysis-workflow.html"><a href="basic-analysis-workflow.html"><i class="fa fa-check"></i><b>6</b> Basic analysis workflow</a>
 <ul>
@@ -102,6 +104,11 @@
 <li class="chapter" data-level="7" data-path="code-snippets-for-quick-analysis.html"><a href="code-snippets-for-quick-analysis.html"><i class="fa fa-check"></i><b>7</b> Code snippets for quick analysis</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="code-snippets-for-quick-analysis.html"><a href="code-snippets-for-quick-analysis.html#summary-on-protein-count"><i class="fa fa-check"></i><b>7.1</b> Summary on protein count</a></li>
+<li class="chapter" data-level="7.2" data-path="code-snippets-for-quick-analysis.html"><a href="code-snippets-for-quick-analysis.html#protein-expression-analysis"><i class="fa fa-check"></i><b>7.2</b> Protein expression analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="working-with-databases-for-functional-enrichment.html"><a href="working-with-databases-for-functional-enrichment.html"><i class="fa fa-check"></i><b>8</b> Working with databases for functional enrichment</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="working-with-databases-for-functional-enrichment.html"><a href="working-with-databases-for-functional-enrichment.html#msigdb-database"><i class="fa fa-check"></i><b>8.1</b> MSigDB database</a></li>
 </ul></li>
 </ul>
 
@@ -122,10 +129,9 @@
             <section class="normal" id="section-">
 <div id="acknowledgements" class="section level1 unnumbered">
 <h1>Acknowledgements</h1>
-<p>This R package was developed at the University of Ottawa in the lab of <a href="https://mysite.science.uottawa.ca/mberezov/">Dr. Maxim Berezovski</a> and while working under Dr. Zoran Minic, Core Facility Manager and Biological Mass Spectrometrist of the John L. Holmes Mass Spectrometry Facility. Both have given me the necessary challenges and freedom to try and learn approaches to various problems addressed by modern MS-based proteomics.</p>
-<p>Initial collections of data analysis functions I used throughout my Master’s program have been superseded by this R package.My first undergraduate student Abdullah Khraibah motivated me to write functions comprehensible to others which ultimately led to much better code and reproducibility in my own work.</p>
-<p>Lastly, long before I used the tidyverse or R Markdown for the first time, and friend and fellow student from the TU Darmstadt, Daniel Torka recommended both to me, which I dismissed at that time. Now, both are integral parts of my everyday work and I feel very stupid. Thanks Junior!</p>
-
+<p>This R package was developed at the University of Ottawa in the <a href="https://mysite.science.uottawa.ca/mberezov/">lab</a> of <a href="https://mysite.science.uottawa.ca/mberezov/maxim-berezovski.html">Dr. Maxim Berezovski</a> and working with <a href="https://mysite.science.uottawa.ca/mberezov/team/current-lab-members/zoran-minic.html">Dr. Zoran Minic</a>, Core Facility Manager and Biological Mass Spectrometrist of the <a href="https://www.jlhms.uottawa.ca/staff.html">John L. Holmes Mass Spectrometry Facility</a>. Both have given me the necessary challenges and freedom to try and learn approaches to various problems addressed by modern MS-based proteomics, and put the results together in this R package.</p>
+<p>Initial collections of data analysis functions I used throughout my Master’s program have been superseded by this package. My first undergraduate student Abdullah Khraibah motivated me to write functions comprehensible to others which ultimately led to much better code and reproducibility in my own work.</p>
+<p>Lastly, long before I used the tidyverse or R Markdown for the first time, and friend and fellow student from the TU Darmstadt, <a href="https://github.com/danielbenjamintorka">Daniel Torka</a> recommended both to me, which I dismissed at that time. Now, both are integral parts of my everyday work and I feel very stupid. Thanks Junior!</p>
 </div>
             </section>
 
@@ -133,7 +139,7 @@
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="introduction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ressources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Getting started with R and RStudio | pOmics: Tidy Proteomics Data Analysis in R</title>
   <meta name="description" content="Chapter 2 Getting started with R and RStudio | pOmics: Tidy Proteomics Data Analysis in R" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Getting started with R and RStudio | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="introduction.html"/>
 <link rel="next" href="version-control-with-git-and-github.html"/>
-<script src="libs/header-attrs-2.9.2/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -149,14 +149,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-the-r-language"><i class="fa fa-check"></i><b>2.1</b> Install the R language</a></li>
 <li class="chapter" data-level="2.2" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-rstudio"><i class="fa fa-check"></i><b>2.2</b> Install RStudio</a></li>
-<li class="chapter" data-level="2.3" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-others"><i class="fa fa-check"></i><b>2.3</b> Install others</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages"><i class="fa fa-check"></i><b>2.4</b> Install R packages</a></li>
-<li class="chapter" data-level="2.5" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-bioconductor-packages"><i class="fa fa-check"></i><b>2.5</b> Install R Bioconductor packages</a></li>
+<li class="chapter" data-level="2.3" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages"><i class="fa fa-check"></i><b>2.3</b> Install R packages</a></li>
+<li class="chapter" data-level="2.4" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-from-bioconductor"><i class="fa fa-check"></i><b>2.4</b> Install R from Bioconductor</a></li>
+<li class="chapter" data-level="2.5" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages-from-github-and-others"><i class="fa fa-check"></i><b>2.5</b> Install R packages from GitHub and others</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html"><i class="fa fa-check"></i><b>3</b> Version control with Git and GitHub</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#importing-data"><i class="fa fa-check"></i><b>3.1</b> Importing data</a></li>
-<li class="chapter" data-level="3.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#organize-datasets"><i class="fa fa-check"></i><b>3.2</b> Organize datasets</a></li>
+<li class="chapter" data-level="3.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#basic-update-of-data"><i class="fa fa-check"></i><b>3.1</b> Basic update of data</a></li>
+<li class="chapter" data-level="3.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#common-problems"><i class="fa fa-check"></i><b>3.2</b> Common problems</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#too-large-files"><i class="fa fa-check"></i><b>3.2.1</b> Too large files</a></li>
+<li class="chapter" data-level="3.2.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#gitignore-does-not-instantly-work"><i class="fa fa-check"></i><b>3.2.2</b> .gitignore does not instantly work</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -185,24 +189,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.2</span> Install RStudio</h2>
 <p>Download the desktop version of RStudio from <a href="https://www.rstudio.com/products/rstudio/" class="uri">https://www.rstudio.com/products/rstudio/</a>. This is the program in which you will interact with the R language and conduct all your analyses.</p>
 </div>
-<div id="install-others" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Install others</h2>
-<p>To install packages from GitHub, you need RTools. Install RTools from <a href="https://cran.r-project.org/bin/windows/Rtools/" class="uri">https://cran.r-project.org/bin/windows/Rtools/</a>.</p>
-</div>
-<div id="install-r-packages" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Install R packages</h2>
+<div id="install-r-packages" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Install R packages</h2>
 <p>“R packages are collections of functions and data sets developed by the community. They increase the power of R by improving existing base R functionalities, or by adding new ones.”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<p>(Available CRAN Packages By Name)[<a href="https://cran.r-project.org/web/packages/available_packages_by_name.html" class="uri">https://cran.r-project.org/web/packages/available_packages_by_name.html</a>]</p>
-</div>
-<div id="install-r-bioconductor-packages" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Install R Bioconductor packages</h2>
-<p>Install devtools using <code>install.packages("devtools")</code>.</p>
-<p>Install Bioconductor (<a href="https://bioconductor.org/" class="uri">https://bioconductor.org/</a>) via</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="getting-started-with-r-and-rstudio.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb1-2"><a href="getting-started-with-r-and-rstudio.html#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
-<span id="cb1-3"><a href="getting-started-with-r-and-rstudio.html#cb1-3" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>()</span></code></pre></div>
+<p><a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">Available CRAN Packages By Name</a></p>
 <p>Install the tidyverse (<a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a>) via</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="getting-started-with-r-and-rstudio.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="getting-started-with-r-and-rstudio.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<p>Next, we will download two more packages, which will help us install even more R packages from sources other than CRAN.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="getting-started-with-r-and-rstudio.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&quot;devtools&quot;</span>, </span>
+<span id="cb2-2"><a href="getting-started-with-r-and-rstudio.html#cb2-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">&quot;BiocManager&quot;</span>))</span></code></pre></div>
+</div>
+<div id="install-r-from-bioconductor" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Install R from Bioconductor</h2>
+<p>Install Bioconductor (<a href="https://bioconductor.org/" class="uri">https://bioconductor.org/</a>) via</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="getting-started-with-r-and-rstudio.html#cb3-1" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="fu">c</span>(<span class="st">&quot;clusterProfiler&quot;</span>,</span>
+<span id="cb3-2"><a href="getting-started-with-r-and-rstudio.html#cb3-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot;org.Hs.eg.db&quot;</span></span>
+<span id="cb3-3"><a href="getting-started-with-r-and-rstudio.html#cb3-3" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot;UniProt.ws&quot;</span>))</span></code></pre></div>
+</div>
+<div id="install-r-packages-from-github-and-others" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Install R packages from GitHub and others</h2>
+<p>Another important source of R packages is GitHub. GitHub is not just the place where most R packages are being developed before they are put to repositories such as CRAN or Bioconductor, many other packages including the <code>pOmics</code> packages can be installed from it. :)</p>
+<p>Let’s do it:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="getting-started-with-r-and-rstudio.html#cb4-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;nicohuttmann/pOmics&quot;</span>)</span></code></pre></div>
+<p>Last but not least, there are some other sources for R packages which will be exemplified by the <code>disgenet2r</code> package to query the <a href="https://www.disgenet.org/">DisGeNET</a> database for gene disease associations.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="getting-started-with-r-and-rstudio.html#cb5-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_bitbucket</span>(<span class="st">&quot;ibi_group/disgenet2r&quot;</span>)</span></code></pre></div>
 
 </div>
 </div>
@@ -222,7 +232,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -262,8 +271,12 @@ gitbook.start({
 "text": null
 },
 "download": ["pOmics-guide.pdf", "pOmics-guide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
-"collapse": "none",
+"collapse": "subsections",
 "scroll_highlight": false
 }
 });

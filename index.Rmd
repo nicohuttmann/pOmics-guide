@@ -3,23 +3,17 @@ title: "pOmics: Tidy Proteomics Data Analysis in R"
 author: "Nico Hüttmann"
 site: bookdown::bookdown_site
 documentclass: book
-output: bookdown::gitbook
+output: 
+  bookdown::gitbook:
+    config:
+      toc:
+        collapse: subsections
 github-repo: nicohuttmann/pOmics-guide
 ---
 
-# Preface {.unnumbered}
+# Preface {-}
 
 Welcome! This is my attempt to summarize what I learned about proteomics data analysis in R. It took me a while to learn it, so why not share it.
-
-\
-\
-
-<p align="center">
-
-<img src="img/Simba.PNG" width="500"/>
-
-</p>
-
 
 
 Main features:
@@ -34,9 +28,14 @@ Main features:
 
 
 
+<p align="center">
+
+<img src="img/Simba.PNG" width="500"/>
+
+</p>
 
 
-# Acknowledgements {.unnumbered}
+# Acknowledgements {-}
 
 This R package was developed at the University of Ottawa in the [lab](https://mysite.science.uottawa.ca/mberezov/) of [Dr. Maxim Berezovski](https://mysite.science.uottawa.ca/mberezov/maxim-berezovski.html) and working with [Dr. Zoran Minic](https://mysite.science.uottawa.ca/mberezov/team/current-lab-members/zoran-minic.html), Core Facility Manager and Biological Mass Spectrometrist of the [John L. Holmes Mass Spectrometry Facility](https://www.jlhms.uottawa.ca/staff.html). Both have given me the necessary challenges and freedom to try and learn approaches to various problems addressed by modern MS-based proteomics, and put the results together in this R package.
 
@@ -44,7 +43,7 @@ Initial collections of data analysis functions I used throughout my Master's pro
 
 Last but not least, long before I used the tidyverse or R Markdown for the first time, [Daniel Torka](https://github.com/danielbenjamintorka), a friend and fellow student from Darmstadt, recommended both to me, which I dismissed at that time. Now, both are integral parts of my everyday work and I feel very stupid. Thanks Junior!
 
-# Ressources {.unnumbered}
+# Ressources {-}
 
 This is a brief listing of resources for proteomics data analysis and R programming on which all following content is based on:
 
@@ -52,3 +51,4 @@ This is a brief listing of resources for proteomics data analysis and R programm
 -   More to come
 
 This is merely a short list of general resources to start getting into proteomics data analysis in R. These and further articles, tutorial, etc. will be referenced throughout the handbook where informative. Have fun!
+

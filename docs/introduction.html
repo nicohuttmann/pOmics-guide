@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 1 Introduction | pOmics: Tidy Proteomics Data Analysis in R</title>
   <meta name="description" content="Chapter 1 Introduction | pOmics: Tidy Proteomics Data Analysis in R" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 1 Introduction | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="ressources.html"/>
 <link rel="next" href="getting-started-with-r-and-rstudio.html"/>
-<script src="libs/header-attrs-2.9.2/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -149,14 +149,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-the-r-language"><i class="fa fa-check"></i><b>2.1</b> Install the R language</a></li>
 <li class="chapter" data-level="2.2" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-rstudio"><i class="fa fa-check"></i><b>2.2</b> Install RStudio</a></li>
-<li class="chapter" data-level="2.3" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-others"><i class="fa fa-check"></i><b>2.3</b> Install others</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages"><i class="fa fa-check"></i><b>2.4</b> Install R packages</a></li>
-<li class="chapter" data-level="2.5" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-bioconductor-packages"><i class="fa fa-check"></i><b>2.5</b> Install R Bioconductor packages</a></li>
+<li class="chapter" data-level="2.3" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages"><i class="fa fa-check"></i><b>2.3</b> Install R packages</a></li>
+<li class="chapter" data-level="2.4" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-from-bioconductor"><i class="fa fa-check"></i><b>2.4</b> Install R from Bioconductor</a></li>
+<li class="chapter" data-level="2.5" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages-from-github-and-others"><i class="fa fa-check"></i><b>2.5</b> Install R packages from GitHub and others</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html"><i class="fa fa-check"></i><b>3</b> Version control with Git and GitHub</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#importing-data"><i class="fa fa-check"></i><b>3.1</b> Importing data</a></li>
-<li class="chapter" data-level="3.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#organize-datasets"><i class="fa fa-check"></i><b>3.2</b> Organize datasets</a></li>
+<li class="chapter" data-level="3.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#basic-update-of-data"><i class="fa fa-check"></i><b>3.1</b> Basic update of data</a></li>
+<li class="chapter" data-level="3.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#common-problems"><i class="fa fa-check"></i><b>3.2</b> Common problems</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#too-large-files"><i class="fa fa-check"></i><b>3.2.1</b> Too large files</a></li>
+<li class="chapter" data-level="3.2.2" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html#gitignore-does-not-instantly-work"><i class="fa fa-check"></i><b>3.2.2</b> .gitignore does not instantly work</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -177,7 +181,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="introduction" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>Welcome to the pOmics Handbook.</p>
+<p>Welcome to the pOmics Handbook!</p>
 <div id="setup-r-and-rstudio" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Setup R and RStudio</h2>
 <p>First, we need to setup the environment in which we will work. For this, we need the <a href="https://www.r-project.org/">R programming language and statistical environment</a>, <a href="https://www.rstudio.com/">RStudio</a>, the most commonly used code editor for R, and finally a bunch of R packages, collections of readily available functions written by the R community.</p>
@@ -203,7 +207,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -243,8 +246,12 @@ gitbook.start({
 "text": null
 },
 "download": ["pOmics-guide.pdf", "pOmics-guide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
-"collapse": "none",
+"collapse": "subsections",
 "scroll_highlight": false
 }
 });

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Version control with Git and GitHub | pOmics: Tidy Proteomics Data Analysis in R</title>
   <meta name="description" content="Chapter 3 Version control with Git and GitHub | pOmics: Tidy Proteomics Data Analysis in R" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Version control with Git and GitHub | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="getting-started-with-r-and-rstudio.html"/>
 
-<script src="libs/header-attrs-2.9.2/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -137,6 +137,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="ressources.html"><a href="ressources.html"><i class="fa fa-check"></i>Ressources</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#setup-r-and-rstudio"><i class="fa fa-check"></i><b>1.1</b> Setup R and RStudio</a></li>
@@ -147,9 +149,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-the-r-language"><i class="fa fa-check"></i><b>2.1</b> Install the R language</a></li>
 <li class="chapter" data-level="2.2" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-rstudio"><i class="fa fa-check"></i><b>2.2</b> Install RStudio</a></li>
-<li class="chapter" data-level="2.3" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-others"><i class="fa fa-check"></i><b>2.3</b> Install others</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages"><i class="fa fa-check"></i><b>2.4</b> Install R packages</a></li>
-<li class="chapter" data-level="2.5" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-bioconductor-packages"><i class="fa fa-check"></i><b>2.5</b> Install R Bioconductor packages</a></li>
+<li class="chapter" data-level="2.3" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages"><i class="fa fa-check"></i><b>2.3</b> Install R packages</a></li>
+<li class="chapter" data-level="2.4" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-from-bioconductor"><i class="fa fa-check"></i><b>2.4</b> Install R from Bioconductor</a></li>
+<li class="chapter" data-level="2.5" data-path="getting-started-with-r-and-rstudio.html"><a href="getting-started-with-r-and-rstudio.html#install-r-packages-from-github-and-others"><i class="fa fa-check"></i><b>2.5</b> Install R packages from GitHub and others</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="version-control-with-git-and-github.html"><a href="version-control-with-git-and-github.html"><i class="fa fa-check"></i><b>3</b> Version control with Git and GitHub</a>
 <ul>
@@ -183,7 +185,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="basic-update-of-data" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Basic update of data</h2>
 <p>Add files:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="version-control-with-git-and-github.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="version-control-with-git-and-github.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code></pre></div>
 </div>
 <div id="common-problems" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Common problems</h2>
@@ -196,25 +198,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Open the terminal in this folder (e.g. via RStudio &gt; Git &gt; Shell…)</p></li>
 <li><p>Type in the terminal:</p></li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="version-control-with-git-and-github.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> bfg.jar <span class="at">--strip-blobs-bigger-than</span> 100M</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="version-control-with-git-and-github.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> bfg.jar <span class="at">--strip-blobs-bigger-than</span> 100M</span></code></pre></div>
 <p>The file name “bfg.jar” must match the name of your jar file and the file size limit can be changed (e.g. 50M for 50 )</p>
 <ol start="5" style="list-style-type: decimal">
 <li>If you do not encouter an error, type:</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="version-control-with-git-and-github.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> gc <span class="at">--prune</span><span class="op">=</span>now <span class="at">--aggressive</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="version-control-with-git-and-github.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> gc <span class="at">--prune</span><span class="op">=</span>now <span class="at">--aggressive</span></span></code></pre></div>
 <p>to clean the dead data.</p>
 <p>If you encounter the following error <code>Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?</code>, refer to this post <a href="https://stackoverflow.com/q/61769785" class="uri">https://stackoverflow.com/q/61769785</a> and type <code>git gc</code> prior to step 4.</p>
 </div>
 <div id="gitignore-does-not-instantly-work" class="section level3" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> .gitignore does not instantly work</h3>
 <p>Just do:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="version-control-with-git-and-github.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">-r</span> <span class="at">--cached</span> .</span>
-<span id="cb4-2"><a href="version-control-with-git-and-github.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb4-3"><a href="version-control-with-git-and-github.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Drop files from .gitignore&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="version-control-with-git-and-github.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">-r</span> <span class="at">--cached</span> .</span>
+<span id="cb9-2"><a href="version-control-with-git-and-github.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb9-3"><a href="version-control-with-git-and-github.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Drop files from .gitignore&quot;</span></span></code></pre></div>
 
 </div>
 </div>
 </div>
+
+
+
+
+
+
             </section>
 
           </div>
@@ -225,7 +233,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -265,8 +272,12 @@ gitbook.start({
 "text": null
 },
 "download": ["pOmics-guide.pdf", "pOmics-guide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
-"collapse": "none",
+"collapse": "subsections",
 "scroll_highlight": false
 }
 });

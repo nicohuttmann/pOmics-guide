@@ -11,32 +11,13 @@ Download the most recent release of R for your platform from https://cloud.r-pro
 Download the desktop version of RStudio from https://www.rstudio.com/products/rstudio/. This is the program in which you will interact with the R language and conduct all your analyses.
 
 
-## Install others
-
-To install packages from GitHub, you need RTools. Install RTools from https://cran.r-project.org/bin/windows/Rtools/.
-
-
-
 
 ## Install R packages
 
 "R packages are collections of functions and data sets developed by the community. They increase the power of R by improving existing base R functionalities, or by adding new ones."^[https://www.datacamp.com/community/tutorials/r-packages-guide] 
 
 
-(Available CRAN Packages By Name)[https://cran.r-project.org/web/packages/available_packages_by_name.html]
-
-
-
-## Install R Bioconductor  packages
-
-Install devtools using `install.packages("devtools")`.
-
-Install Bioconductor (https://bioconductor.org/) via 
-```{r bioc, eval=FALSE, message=F}
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install()
-```
+[Available CRAN Packages By Name](https://cran.r-project.org/web/packages/available_packages_by_name.html)
 
 
 
@@ -44,3 +25,46 @@ Install the tidyverse (https://www.tidyverse.org/) via
 ```{r install tidyR, eval=FALSE}
 install.packages("tidyverse")
 ```
+
+Next, we will download two more packages, which will help us install even more R packages from sources other than CRAN.
+```{r install more, eval=FALSE}
+install.packages(c("devtools", 
+                   "BiocManager"))
+```
+
+
+
+## Install R from Bioconductor
+
+
+Install Bioconductor (https://bioconductor.org/) via 
+```{r bioc, eval=FALSE, message=F}
+BiocManager::install(c("clusterProfiler",
+                       "org.Hs.eg.db"
+                       "UniProt.ws"))
+```
+
+
+
+
+
+
+
+## Install R packages from GitHub and others
+
+Another important source of R packages is GitHub. GitHub is not just the place where most R packages are being developed before they are put to repositories such as CRAN or Bioconductor, many other packages including the `pOmics` packages can be installed from it. :)
+
+Let's do it:
+```{r install pOmics, eval=FALSE}
+devtools::install_github("nicohuttmann/pOmics")
+```
+
+
+
+
+Last but not least, there are some other sources for R packages which will be exemplified by the `disgenet2r` package to query the [DisGeNET](https://www.disgenet.org/) database for gene disease associations.
+```{r install disgenet2r, eval=FALSE}
+devtools::install_bitbucket("ibi_group/disgenet2r")
+```
+
+

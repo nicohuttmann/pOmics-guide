@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the pOmics Handbook. 
+Welcome to the pOmics Handbook! 
 
 ## Setup R and RStudio
 

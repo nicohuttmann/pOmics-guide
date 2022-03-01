@@ -5,13 +5,11 @@ project-management-with-git-and-github
 getting-started-with-r-and-rstudio
 install-the-r-language
 install-rstudio
-install-others
 install-r-packages
-install-r-bioconductor-packages
+install-r-from-bioconductor
+install-r-packages-from-github-and-others
 version-control-with-git-and-github
-importing-data
-organize-datasets
+basic-update-of-data
 common-problems
 too-large-files
 gitignore-does-not-instantly-work
-basic-update-of-data

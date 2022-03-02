@@ -1,11 +1,11 @@
 bookdown::gitbook:
   css: style.css
+  toc_depth: 1
   config:
     toc:
-      collapse: none
+      collapse: sections
       scroll_highlight: no
       before: |
         <li><a href="./">pOmics Handbook</a></li>
     download: ["pdf", "epub"]
-bookdown::pdf_book: default
-bookdown::epub_book: default
+

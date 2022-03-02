@@ -1,7 +1,0 @@
-# Overview pOmics
-
-```{r install-packages}
-
-install.packages(c())
-
-```

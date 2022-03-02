@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | pOmics: Tidy Proteomics Data Analysis in R</title>
-  <meta name="description" content="Page not found | pOmics: Tidy Proteomics Data Analysis in R" />
+  <title>3 R packages | pOmics: Tidy Proteomics Data Analysis in R</title>
+  <meta name="description" content="3 R packages | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | pOmics: Tidy Proteomics Data Analysis in R" />
+  <meta property="og:title" content="3 R packages | pOmics: Tidy Proteomics Data Analysis in R" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nicohuttmann/pOmics-guide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | pOmics: Tidy Proteomics Data Analysis in R" />
+  <meta name="twitter:title" content="3 R packages | pOmics: Tidy Proteomics Data Analysis in R" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="r-and-rstudio.html"/>
+<link rel="next" href="version-control-with-git-and-github.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -163,19 +163,55 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="r-packages" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> R packages</h1>
+<blockquote>
+<p>“R packages are collections of functions and data sets developed by the community. They increase the power of R by improving existing base R functionalities, or by adding new ones.”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</blockquote>
+<p>Basically, R packages are nothing but collections of functions bundled together in a way that makes sense. Like different cookbooks that only contain recipes for a particular kind of food. They can be installed from many different sources which will be explored below.</p>
+<div id="from-cran" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> From CRAN</h2>
+<p><a href="What%20are%20R%20and%20CRAN?">The Comprehensive R Archive Network</a> (CRAN) package repository features 18,000+ R packages. Here’s the list of <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">Available CRAN Packages By Name</a>. Most general purpose packages can be found here, however due to reasons, some packages are only available from other sources.</p>
+<p>As a first example, we will download the <a href="https://www.tidyverse.org/">tidyverse</a>, a collection of R packages for data science.</p>
+<blockquote>
+<p>“The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.”</p>
+</blockquote>
+<p>We can install packages from CRAN with the <code>install.packages()</code> function like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="r-packages.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<p>Note, that we can also download more than one package at once using a vector (<code>c()</code>) containing all package names:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="r-packages.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="st">&quot;devtools&quot;</span>))</span></code></pre></div>
+<p><code>BiocManager</code> as well as <code>devtools</code> will be used in the following to download R packages from other sources.</p>
+</div>
+<div id="from-bioconductor" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> From Bioconductor</h2>
+<p>The <a href="https://bioconductor.org/">Bioconductor</a> is a collection of R packages for bioinformatics purposes. The first packages we will need from the Bioconductor will be downloaded with the <code>install()</code> function from the <code>BiocManager</code> package:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="r-packages.html#cb3-1" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="fu">c</span>(<span class="st">&quot;clusterProfiler&quot;</span>,</span>
+<span id="cb3-2"><a href="r-packages.html#cb3-2" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot;org.Hs.eg.db&quot;</span></span>
+<span id="cb3-3"><a href="r-packages.html#cb3-3" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot;UniProt.ws&quot;</span>))</span></code></pre></div>
+</div>
+<div id="from-github-and-others-sources" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> From GitHub and others sources</h2>
+<p>Another important source of R packages is GitHub. GitHub is not just the place where most R packages are being developed before they are put to repositories such as CRAN or Bioconductor, many other packages including the <code>pOmics</code> packages can be installed from it as well. :)</p>
+<p>Let’s do it with the <code>install_github()</code> function from <code>devtools</code>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="r-packages.html#cb4-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;nicohuttmann/pOmics&quot;</span>)</span></code></pre></div>
+<p>There are some other sources for R packages, which we want to use. Here, we are downloading the <code>disgenet2r</code> package to query the <a href="https://www.disgenet.org/">DisGeNET</a> database for gene disease associations:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="r-packages.html#cb5-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_bitbucket</span>(<span class="st">&quot;ibi_group/disgenet2r&quot;</span>)</span></code></pre></div>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="https://www.datacamp.com/community/tutorials/r-packages-guide" class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a><a href="r-packages.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="r-and-rstudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="version-control-with-git-and-github.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
